@@ -4,7 +4,6 @@ jobs:
     release:
         name: Release
         if: github.ref == 'refs/heads/main'
-        needs: test
         runs-on: ubuntu-18.04
         steps:
             - name: Checkout
